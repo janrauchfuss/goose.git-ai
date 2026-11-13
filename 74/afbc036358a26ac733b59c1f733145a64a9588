@@ -1,0 +1,68 @@
+cliff.toml
+  s_d111bf2a1292bb::t_c0360822ae985d 1-42
+README.md
+  s_d111bf2a1292bb::t_fa23cc8e7884a7 1-2,16,20,22,24,29,32,36,39,41,43,49,52,55,59-60,69,71,81,85,87,91-93,106-109,113-114,117-120
+  s_d111bf2a1292bb::t_f72a3c9afc73b7 3-15,17-19,21,23,25-28,30-31,33-35,37-38,40,42,44-48,50-51,53-54,56-58,61-66,68,70,72-80,82-84,86,88-90,94-105,110-112,115-116
+  s_d111bf2a1292bb::t_4f19ac9a63695f 67
+  h_0239927ae55b03 121
+mise.toml
+  s_d111bf2a1292bb::t_174d605bbe1675 5-7
+  s_d111bf2a1292bb::t_c0360822ae985d 1-4,8-11
+LICENSE
+  s_d111bf2a1292bb::t_c0360822ae985d 1-21
+.github/workflows/ci.yml
+  s_d111bf2a1292bb::t_c0360822ae985d 1-17
+lefthook.yml
+  s_d111bf2a1292bb::t_c0360822ae985d 1-3,10-26
+  s_d111bf2a1292bb::t_174d605bbe1675 4-9,27
+.editorconfig
+  s_d111bf2a1292bb::t_174d605bbe1675 11-15
+  s_d111bf2a1292bb::t_c0360822ae985d 1-10,16-25
+.gitignore
+  s_d111bf2a1292bb::t_c0360822ae985d 1-13
+.github/dependabot.yml
+  s_d111bf2a1292bb::t_c0360822ae985d 1-6
+justfile
+  s_d111bf2a1292bb::t_c0360822ae985d 1-18,21-23,25-27,29-60
+  s_d111bf2a1292bb::t_174d605bbe1675 19-20,24,28
+tests/gitai-hook.bats
+  s_d111bf2a1292bb::t_174d605bbe1675 1-91
+CONTRIBUTING.md
+  s_d111bf2a1292bb::t_c0360822ae985d 1-4
+  s_d111bf2a1292bb::t_8fe52a0942bb88 5-6
+CHANGELOG.md
+  s_d111bf2a1292bb::t_c0360822ae985d 1-9
+  s_d111bf2a1292bb::t_8fe52a0942bb88 10
+scripts/gitai-hook.sh
+  s_d111bf2a1292bb::t_174d605bbe1675 1-39,42-116
+  s_d111bf2a1292bb::t_e0371bab928899 40-41
+hooks/hooks.json
+  s_d111bf2a1292bb::t_174d605bbe1675 7,15,23
+  s_d111bf2a1292bb::t_511e1094767471 1-6,8-14,16-22,24-28
+.github/workflows/release.yml
+  s_d111bf2a1292bb::t_c0360822ae985d 1-21
+plugin.json
+  s_d111bf2a1292bb::t_c0360822ae985d 7
+  s_d111bf2a1292bb::t_511e1094767471 1-6,8-9
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "74afbc036358a26ac733b59c1f733145a64a9588",
+  "prompts": {},
+  "humans": {
+    "h_0239927ae55b03": {
+      "author": "Jan Rauchfuss <1475730+janrauchfuss@users.noreply.github.com>"
+    }
+  },
+  "sessions": {
+    "s_d111bf2a1292bb": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "36bd7377-7e92-4986-8808-65ac23d845e3",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "Jan Rauchfuss <1475730+janrauchfuss@users.noreply.github.com>"
+    }
+  }
+}

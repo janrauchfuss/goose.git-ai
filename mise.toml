@@ -1,0 +1,11 @@
+min_version = "2024.12.0"
+
+[tools]
+just = "latest"
+shellcheck = "latest"
+shfmt = "latest"
+bats = "latest"
+git-cliff = "latest"
+lefthook = "latest"
+actionlint = "latest"
+jq = "latest"

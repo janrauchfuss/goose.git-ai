@@ -1,0 +1,13 @@
+# Tooling
+.mise.local.toml
+mise.local.toml
+lefthook-local.yml
+
+# Local scratch (notes, drafts)
+.temp/
+
+# OS / editors
+.DS_Store
+.idea/
+.vscode/
+*.swp

@@ -1,0 +1,28 @@
+{
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "(^|__)(write|edit|shell)$",
+        "hooks": [
+          { "type": "command", "command": "${PLUGIN_ROOT}/scripts/gitai-hook.sh", "timeout": 30 }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "(^|__)(write|edit|shell)$",
+        "hooks": [
+          { "type": "command", "command": "${PLUGIN_ROOT}/scripts/gitai-hook.sh", "timeout": 30 }
+        ]
+      }
+    ],
+    "PostToolUseFailure": [
+      {
+        "matcher": "(^|__)shell$",
+        "hooks": [
+          { "type": "command", "command": "${PLUGIN_ROOT}/scripts/gitai-hook.sh", "timeout": 30 }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,34 @@
+name: Bug report
+description: The plugin does not record or misattributes goose changes
+labels: [bug]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What did you expect, and what did you see instead?
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. goose session ...
+        2. git commit ...
+        3. git-ai stats --json shows ...
+    validations:
+      required: true
+  - type: textarea
+    id: output
+    attributes:
+      label: Relevant output
+      description: Output of `git-ai status`, `git-ai stats --json` and any `[goose-git-ai]` lines from stderr.
+      render: text
+  - type: input
+    id: versions
+    attributes:
+      label: Versions
+      description: goose, git-ai (`git-ai --version`), jq, OS
+    validations:
+      required: true

@@ -42,19 +42,15 @@ install:
 uninstall:
     rm -f "{{ plugin_dir }}"
 
-# Regenerate CHANGELOG.md from conventional commits
-changelog:
-    git cliff --output CHANGELOG.md
-
-# Preview the changelog for unreleased commits
+# Preview the changelog for unreleased commits (CHANGELOG.md is written only by the release workflow)
 changelog-preview:
     git cliff --unreleased
 
-# Tag a release: just release 0.2.0
-release version: check
-    sed -i.bak 's/"version": ".*"/"version": "{{ version }}"/' plugin.json && rm plugin.json.bak
-    git cliff --tag "v{{ version }}" --output CHANGELOG.md
-    git add plugin.json CHANGELOG.md
-    git commit -m "chore(release): v{{ version }}"
-    git tag -a "v{{ version }}" -m "v{{ version }}"
-    @echo "Done. Push with: git push --follow-tags"
+# Show the next version derived from conventional commits
+next-version:
+    git cliff --bumped-version
+
+# Trigger the release workflow: `just release` (auto version) or `just release 0.2.0`
+release version="":
+    gh workflow run release.yml --ref main {{ if version != "" { "-f version=" + version } else { "" } }}
+    @echo "Release started: gh run watch"

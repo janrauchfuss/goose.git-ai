@@ -2,8 +2,15 @@
   "name": "git-ai",
   "version": "0.1.0",
   "description": "Reports goose file changes to Git AI (preset agent-v1) for line-level AI code attribution",
-  "author": { "name": "Jan Rauchfuss" },
+  "author": {
+    "name": "Jan Rauchfuss"
+  },
   "license": "MIT",
   "repository": "https://github.com/janrauchfuss/goose.git-ai",
-  "keywords": ["goose", "git-ai", "attribution", "hooks"]
+  "keywords": [
+    "goose",
+    "git-ai",
+    "attribution",
+    "hooks"
+  ]
 }
